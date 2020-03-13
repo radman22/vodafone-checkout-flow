@@ -16,13 +16,13 @@ This repository contains a sample process of testing the checkout flow of  buyin
 
 ## The main problem 
 
-The main problem in this checkout flow is that there is too much variiation of data and that variation of data is combining with other data.So a lot of combinatinations are made which create a lot of flows.  
+The main problem in this checkout flow is that there is too much variation of data and that variation of data is combining with other data.So a lot of combinatinations are made which create a lot of flows.  
 
 ### Concepts deployed in the framework
 
 The following concepts were used 
 - Cypress enviroment varaibles to safe and proper data driven testing 
-- Parameterizations to tackle with tackle with various combination of data 
+- Parameterizations to tackle with various combination of data 
 - Page Object development pattern for more code readbility and extendibility 
 - Cypress commands to resuse and share  the code and functionality among different test cases  
 - Typescript to give more object orriented programming approach in code writing 
@@ -43,10 +43,11 @@ The following concepts were used
 The codebase consists of following folder structure:
 - **Fixture Folder:** Used for parameterization, the combinations of test data is present in this folder , all the data files used by your tests are stored in this folder 
 - **Integrations folder**: Your main code is present in this folder. The main TS file that is run by cypress is present in the folder  
-- **Page Objects:** The verfication of each page and each page's functionality is tested in a seperatly class and every pages object can be found in this foulder
--**Support:** This folder usually contains the commands used in cypress.**Please note that you need index.d.ts to define command on the cypress chainable interface , otherwise it will not pick that command**.In this folder **commands.js** in which all commands are present
--**cypress.env.json:** This is the most important file because it consist of user's senstive data like IBAN and passport number , so it is best to keep this feel out of our test scripts location. 
--**tsconfig:** This file is used to configure cypress for typescript     
+- **Page Objects:** The verfication of each page and each page's functionality is tested in a seperatly class and every pages object can be found in this folder
+
+- **Support:** This folder usually contains the commands used in cypress.**Please note that you need index.d.ts to define command on the cypress chainable interface , otherwise it will not pick that command**.In this folder **commands.js** in which all commands are present
+- **cypress.env.json:** This is the most important file because it consist of user's senstive data like IBAN and passport number , so it is best to keep this feel out of our test scripts location. 
+- **tsconfig:** This file is used to configure cypress for typescript     
 
 
 
@@ -58,4 +59,4 @@ The codebase consists of following folder structure:
 - **npm install:** Go into the main folder and you will see a package.json file. In the same folder open your cmd and type npm install. This will install cypress and all the other dependencies. Don’t worry it will take time. **Please make sure all the dependencies are installed otherwise cypress will not work with typescript.**  
 - **run test:** After the install run command **npm start**. This will launch cypress test runner. A  Test runner is basically A GUI version where you can see your test running. If you want to  run tests in a headless mode please run this command of **npm run**      
 
-## Note! that the tests implemented are not 100% bullet prof there are some assertions failing , please refere to problems document attached in the task 
+## Note! that the tests implemented are not 100% bullet proof there are some assertions failing , please refere to problems document attached in the task 
