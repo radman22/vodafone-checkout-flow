@@ -4,7 +4,8 @@
   "description": "Check out flow of buying a product using cypress with typescript ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/cypress open ",
+    "run"   : "node_modules/.bin/cypress run "
   },
   "keywords": [
     "cypress",
