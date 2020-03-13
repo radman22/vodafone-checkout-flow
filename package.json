@@ -1,0 +1,28 @@
+{
+  "name": "checkout-flow",
+  "version": "1.0.0",
+  "description": "Check out flow of buying a product using cypress with typescript ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "typescript"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@cypress/webpack-preprocessor": "^4.1.0",
+    "cypress": "3.3.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "3.5.2",
+    "webpack": "^4.35.2",
+    "ts-node": "^7.0.1"
+  },
+  "author": "Radman Sheikh",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
